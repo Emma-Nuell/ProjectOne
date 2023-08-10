@@ -3,41 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <title>contact</title>
 </head>
 <body>
-    <header>
-        <img src="images/Rolex-Logo.jpeg" alt="Rolex Logo" width="200px" height="200px"/>
-        <h1>Contact Info</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="About.html" target="_blank">About</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="Terms.html" target="_blank">Terms</a></li>
-            </ul>
-        </nav>       
+    <header class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-crown"></i></i>Rolex</a>
+        <nav class="nav">   
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="contacts.html">Contacts</a>
+                <a href="Terms.html">Terms</a>
+        </nav> 
+        <div class="profile">
+            <a href="#" class="profile-name">Emma<img src="images/download.jpg" class="profile-pic"></a>
+        </div>      
     </header>
     <main>
-        <div>
+        <div class="contact">
         <form>
             <h2>Contact Us</h2>
-            <label for="fullname">Fullname</label><br>
-            <input type="text" id="fullname" required><br>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" required><br>
-            <label for="phone-no">Phone Number</label><br>
-            <input type="number" id="phone-no" required><br>
-            <label for="gender">Gender</label><br>
-            <select id="gender"><br>
+            <label for="fullname" class="label">Fullname</label><br>
+            <input type="text" id="fullname" class="input" required><br>
+            <label for="email" class="label">Email</label><br>
+            <input type="email" id="email" class="input" required><br>
+            <label for="phone-no" class="label">Phone Number</label><br>
+            <input type="tel" id="phone-no" class="input" required><br>
+            <label for="gender" class="label">Gender</label><br>
+            <select id="gender" class="input"><br>
                 <option disabled selected>Select an option</option>
                 <option>Male</option>
                 <option>Female</option>
                 <option>Prefer not to specify</option>
             </select><br>
-            <label for="message">Message</label><br>
-            <textarea placeholder="Enter a message"></textarea><br>
-            <input type="submit" value="submit">
+            <label for="message" class="label">Message</label><br>
+            <textarea placeholder="Enter a message...." class="message"></textarea><br>
+            <button class="input button">Send Message</button>
         </form>
     </div>
     </main>

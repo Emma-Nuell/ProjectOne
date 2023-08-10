@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="images/Rolex-Logo.jpeg" alt="Rolex Logo" width="200px" height="200px"/>
-        <h1>Rolex</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="About.html" target="_blank">About</a></li>
-                <li><a href="contacts.html" target="_blank">Contacts</a></li>
-                <li><a href="Terms.html" target="_blank">Terms</a></li>
-            </ul>
-        </nav>       
+    <header class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-crown"></i>Rolex</a>
+        <nav class="nav">   
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="contacts.html">Contacts</a>
+                <a href="Terms.html">Terms</a>
+        </nav> 
+        <div class="profile">
+            <a href="#" class="profile-name">Emma<img src="images/download.jpg" class="profile-pic"></a>
+        </div>      
     </header>
     <main>
-        <p>This is the unofficial store of rolex</p>
+        <h1>Rolex</h1>
+        <p class="notice">This is the unofficial store of rolex</p>
         <p>We sell items like:</p>
         <ul>
             <li>Gold watches</li>
             <li>Diamonds Rings</li>
             <li>Gold Chains</li>
         </ul>
+        <img src="./images/download (1).jpg" alt="Rolex Logo" width="200px" height="200px" class="product"/><br>
         <button>Click Me</button>
     </main>
 </body> 
